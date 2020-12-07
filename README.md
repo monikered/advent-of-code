@@ -1,5 +1,5 @@
 # Advent of Code
-This is where I keep my solutions to the annual Advent of Code challenge.
+This is where I keep my solutions to the annual Advent of Code challenge. 2019 solutions are currently housed in a separate repository, but links to individual solutions can be found below.
 
 # About
 
