@@ -18,6 +18,6 @@ Day 02: [Password Philosophy](https://adventofcode.com/2020/day/2) | here
 
 **Challenge** | **My Solution**
 ------------- | ---------------
-Day 01: [The Tyranny of the Rocket Equation](https://adventofcode.com/2019/day/1) | here
-Day 02: [1202 Program Alarm](https://adventofcode.com/2019/day/2) | here
-Day 03: [Crossed Wires](https://adventofcode.com/2019/day/3) | here
+Day 01: [The Tyranny of the Rocket Equation](https://adventofcode.com/2019/day/1) | [here](https://github.com/monikered/aoc2019/tree/master/Day%201)
+Day 02: [1202 Program Alarm](https://adventofcode.com/2019/day/2) | [here](https://github.com/monikered/aoc2019/tree/master/Day%202)
+Day 03: [Crossed Wires](https://adventofcode.com/2019/day/3) | [here](https://github.com/monikered/aoc2019/tree/master/Day%203)
