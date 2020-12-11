@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Wed Dec  9 23:59:11 2020
-
-@author: monicaremmers
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
 Created on Fri Dec  4 18:00:29 2020
 
 @author: monicaremmers
