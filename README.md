@@ -13,7 +13,8 @@ Puzzles are released every day in December. I like to solve them in Python.
 ------------- | ---------------
 Day 01: [Report Repair](https://adventofcode.com/2020/day/1) | [here](https://github.com/monikered/advent-of-code/blob/main/2020/AOC2020_1.py)
 Day 02: [Password Philosophy](https://adventofcode.com/2020/day/2) | [here](https://github.com/monikered/advent-of-code/blob/main/2020/AOC2020_2.py)
-Day 03: [Toboggan Trajectory](https://adventofcode.com/2020/day/3) | in progress
+Day 03: [Toboggan Trajectory](https://adventofcode.com/2020/day/3) | [here](https://github.com/monikered/advent-of-code/blob/main/2020/AOC2020_3.py)
+Day 04: [Passport Processing](https://adventofcode.com/2020/day/4) | in progress
 
 ## 2019
 
