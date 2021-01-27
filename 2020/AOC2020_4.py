@@ -21,13 +21,13 @@ def validator(passport_list):
             pass
     return counter
 
-def test_validator(test_input):
+def test_validator():
     assert validator(test_input) == 2, 'Should be 2 valid passports'
 
 if __name__ == '__main__':
     if run_test:
         with open('./inputs/day4_test.txt', 'r') as test_input:
-            test_validator(test_input.read())
+            test_validator()
             print('Test passed')
     else:
         with open('./inputs/day4.txt', 'r') as f:
