@@ -1,15 +1,22 @@
 # How many measurements are larger than the previous measurement?
-import pandas as pd
 
-with open('./2021/inputs/day1.txt', 'r') as f:
+import pandas as pd
+import numpy as np
+
+with open('./2021/inputs/day1test.txt', 'r') as f:
     depths = pd.DataFrame([i.strip() for i in f.readlines()], columns=['value'])
-    depths['change'] = 0
+    depths['change'] = np.NaN
 
 # mark 'change' column as 1 if there's a row-on-row increase
-for i in range(1, len(depths)):
-    if depths.loc[i, 'value'] > depths.loc[i-1, 'value']:
-        depths.loc[i, 'change'] = 1
-    else:
-        depths.loc[i, 'change'] = 0
+def is_increasing(df):
+    for i in range(1, len(df)):
+        if df.loc[i, 'value'] > df.loc[i-1, 'value']:
+            return 1
+        else:
+            return 0
 
-print(sum(depths['change']))
+# PART ONE
+depths.apply(is_increasing, axis=1)
+print(depths)
+# answer should be 1462
+print(sum(depths['change'])+1)
