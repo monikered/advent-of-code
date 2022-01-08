@@ -1,7 +1,7 @@
 import numpy as np
 from statistics import mode
 
-with open('./2021/inputs/day3.txt', 'r') as f:
+with open('./2021/inputs/day3test.txt', 'r') as f:
     diagnostic = f.read().strip().split("\n")
 
 # THIS DOESN'T WORK BECAUSE THE INPUT (UNLIKE THE TEST DATA
@@ -15,6 +15,9 @@ def vertical_slice_list(binary):
     bit4 = [int(str(n[3])) for n in binary]
     bit5 = [int(str(n[4])) for n in binary]
     return bit1,bit2,bit3,bit4,bit5
+def vertical_slice_test(binary):
+    for i, char in enumerate(binary[0]): # this is CORRECT for the outer part of the loop!!!
+        print([int(str(n[i])) for n in binary[i]])
 
 # TODO: TURN GAMMA_BINARY INTO A FUNC USING LIST COMPREHENSION
 # TODO: MORE PRECISE FUNCTION NAME
@@ -31,12 +34,9 @@ def rate_toggle_decimal(rate, binary_source=diagnostic):
         epsilon_list_bool = np.bitwise_not(gamma_list)
         epsilon_binary = ''.join([str(int(e)) for e in epsilon_list_bool])
         epsilon_decimal = int(epsilon_binary, 2)
-
         return epsilon_decimal
     else:
         print('Not a recognized rate')
-
-print(rate_toggle_decimal(rate='gamma'), )
 
 def part_one():
     gamma = rate_toggle_decimal(rate='gamma')
@@ -46,4 +46,4 @@ def part_one():
 # power_consumption = gamma_int * epsilon_int
 
 if __name__ == '__main__':
-    part_one()
+    vertical_slice_test(diagnostic)
