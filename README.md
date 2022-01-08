@@ -7,6 +7,14 @@ This is where I keep my solutions to the annual Advent of Code challenge. 2019 s
 
 Puzzles are released every day in December. I like to solve them in Python.
 
+## 2021
+
+**Challenge** | **My Solution**
+------------- | ---------------
+Day 01: [Sonar Sweep](https://adventofcode.com/2021/day/1) | [here](https://github.com/monikered/advent-of-code/blob/main/2021/Day1.py)
+Day 02: [Dive!](https://adventofcode.com/2021/day/2) | [here](https://github.com/monikered/advent-of-code/blob/main/2021/Day2.py)
+Day 03: [Binary Diagnostic](https://adventofcode.com/2020/day/3) | [here](https://github.com/monikered/advent-of-code/blob/main/2021/Day3.py)
+
 ## 2020
 
 **Challenge** | **My Solution**
