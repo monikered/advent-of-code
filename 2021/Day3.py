@@ -13,16 +13,18 @@ def vertical_list_slicer(binary=diagnostic):
 def rate_toggle_decimal(mode_list, rate):
     gamma_list = np.array([bit for bit in mode_list], dtype=bool)
     if rate == 'gamma':
-        gamma_binary = ''.join([str(int(g)) for g in gamma_list])
-        gamma_decimal = int(gamma_binary, 2)
-        return gamma_decimal
+        binary_rate = ''.join([str(int(g)) for g in gamma_list])
     if rate == 'epsilon':
         epsilon_list = np.bitwise_not(gamma_list)
-        epsilon_binary = ''.join([str(int(e)) for e in epsilon_list])
-        epsilon_decimal = int(epsilon_binary, 2)
-        return epsilon_decimal
-    else:
-        print('Not a recognized rate')
+        binary_rate = ''.join([str(int(e)) for e in epsilon_list])
+    decimal_rate = int(binary_rate, 2)
+    return decimal_rate
+
+def oxygen_generator_rating():
+    pass
+
+def co2_scrubber_rating():
+    pass
 
 def part_one():
     modes = vertical_list_slicer()
@@ -30,7 +32,11 @@ def part_one():
     epsilon = rate_toggle_decimal(mode_list=modes, rate='epsilon')
     res = f'PART ONE: The gamma rate is {gamma} and the epsilon rate is {epsilon}.\n The power consumption--their product--is {gamma*epsilon}.'
     print(res)
-# power_consumption = gamma_int * epsilon_int
+
+def part_two():
+    modes = vertical_list_slicer()
+    pass
 
 if __name__ == '__main__':
     part_one()
+    part_two()
